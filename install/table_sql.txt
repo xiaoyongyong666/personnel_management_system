@@ -1,0 +1,38 @@
+--
+-- 表的结构 `admin_login_log`
+--
+
+CREATE TABLE IF NOT EXISTS `admin_login_log` (
+  `id` int(4) NOT NULL AUTO_INCREMENT,
+  `u_name` varchar(20) NOT NULL,
+  `login_date` int(11) NOT NULL,
+  `login_ip` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;
+
+--
+-- 表的结构 `admin_user`
+--
+
+CREATE TABLE IF NOT EXISTS `admin_user` (
+  `id` int(4) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL,
+  `u_name` varchar(255) NOT NULL,
+  `u_pwd` varchar(255) NOT NULL,
+  `c_date` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+
+--
+-- 表的结构 `member`
+--
+
+CREATE TABLE IF NOT EXISTS `member` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` text NOT NULL,
+  `position` text NOT NULL,
+  `b_tel` varchar(12) NOT NULL,
+  `b_mail` varchar(100) NOT NULL,
+  `c_date` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=17 ;

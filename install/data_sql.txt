@@ -1,0 +1,21 @@
+--
+-- 转存表中的数据 `admin_login_log`
+--
+
+INSERT INTO `admin_login_log` (`id`, `u_name`, `login_date`, `login_ip`) VALUES
+(1, 'owner', 1666886400, 'localhost');
+
+
+--
+-- 转存表中的数据 `admin_user`
+--
+
+INSERT INTO `admin_user` (`id`,`name`, `u_name`, `u_pwd`, `c_date`) VALUES
+(1,'所有者', 'owner', 'c3284d0f94606de1fd2af172aba15bf3', 1666886400);
+
+--
+-- 转存表中的数据 `member`
+--
+
+INSERT INTO `member` (`id`, `name`, `position`, `b_tel`, `b_mail`, `c_date`) VALUES
+(1, '张三', '所有者', '12345678900', '110@110.com', 1666886400);

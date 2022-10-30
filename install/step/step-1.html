@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>安装程序 - 人员管理系统</title>
+        <link rel="stylesheet" href="./images/style.css" />
+    </head>
+
+    <body>
+        <div class="bg-clr">
+            <div class="top">
+              <div class="top-logo">系统安装</div>
+              <div class="top-link">
+                <ul>
+                  <li>MadeBy<a href="http://starpixel.club" target="_blank">&nbsp;xiaoyong</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="main">
+              <ul class="setpbox">
+                <li class="now ks">许可协议</li>
+                <li class="jt">环境检测</li>
+                <li class="jt">参数配置</li>
+                <li class="jt">安装完成</li>
+              </ul>
+            </div>
+            <div class="main">
+              <div class="pcenter">
+                <div class="pr-title"><h3>程序安装许可协议</h3></div>
+                <div class="pr-agreement">
+                  <p>版权所有 (c)2022. xiaoyong 保留所有权利。 </p>
+                  <p>感谢您选择本系统，本系统是由xiaoyong开发的一套适用于中小企业及团队的人员管理程序系统。</p>
+                  <p>基于PHP+MySQL，免费使用，已开源至<a src="https://github.com/xiaoyongyong666/personnel_management_system" target="_blank">github</a>。</p>
+                  <p>为了使你正确并合法的使用本软件，请你在安装使用前务必阅读清楚下面的协议条款：</p>
+                  <strong>一、本程序作者xiaoyong拥有对本授权协议的最终解释权。</strong>
+                  <strong>二、本程序完全免费，本程序的安装使用所产生的任何后果与作者无关！</strong>
+                  <strong>三、本程序禁止修改版权信息。</strong>
+                  <strong>四、允许二次开发本程序，但是必须标明作者和出处</strong>
+                  <strong>五、本程序含有其他开源程序部分开源代码。</strong>
+                  
+                  <br><br><br>
+                    <p><b>协议发布时间：</b> 2022年10月28日</p>
+                  
+                </div>
+                <div class="btn-box btn-box-bd">
+                  <input name="readpact" type="checkbox" id="readpact" value="" />
+                  <label for="readpact"><strong class="fc-690 fs-14">我已经阅读并同意此协议</strong></label>
+                  <input type="button" class="btn-next btn-box-bd" value="继续" onclick="document.getElementById('readpact').checked ?window.location.href='index.php?step=2' : alert('您必须同意软件安装许可协议才能安装！');" />
+                </div>
+              </div>
+            </div>
+            <div class="foot">
+            </div>
+            </div>
+    </body>
+</html>
